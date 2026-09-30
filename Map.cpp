@@ -39,8 +39,6 @@ void Map::drawMap(const std::vector<Point>& snake)
 
 void Map::generateApple(Snake& s, const std::vector<Point>& snake)
 {
-	srand(time(0));
-
 	if (snake[0].x == appleX and snake[0].y == appleY)
 	{
 		appleX = (rand() % (width - 3)) + 2;
